@@ -28,4 +28,5 @@ console.log(f);
 
 let p = 'hello';
 
-console.log(p.slice(1,4));
+console.log(p.slice(1,4));//ell
+console.log(p.slice(1));//ello
