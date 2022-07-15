@@ -1,15 +1,9 @@
-// function persistence(num) {
-//   let a = num.toString().length;
-//   console.log(a);
-// }
-// persistence(999);
-function hello(a) {
-  console.log('Hi', a);
+function persistence(num) {
+  let a = num.toString();
+  if (a.length === 1) {
+    return 0;
+  }
+  let b = a.split('').reduce((a, b) => a * b, 1);
+  return 1 + persistence(b);
 }
-
-let person = {
-  name: 'Vadim',
-  age: 5,
-  grettinggs: hello(this.name),
-};
-hello(person.name);
+console.log(persistence(999));
